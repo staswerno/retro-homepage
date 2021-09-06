@@ -1,0 +1,249 @@
+* {
+  font-family: Roboto Mono, monospace;
+  color: white;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffiles.gamebanana.com%2Fimg%2Fss%2Ftextures%2F52b6321c3de84.jpg");
+  background-color: black;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 80px 90%;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    "header header"
+    "sidebar meat";
+}
+
+@media (max-width: 750px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 150px 90%;
+    grid-row-gap: 10px;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "meat";
+  }
+}
+
+.header {
+  grid-area: header;
+  /*position: fixed;
+  top: 80px; */
+}
+
+/* change to aside */
+.sidebar {
+  background-image: url("https://web.archive.org/web/20090807051346im_/http://geocities.com/cicirossi/slash/purplestar.gif");
+  background-color: black;
+  margin: 10px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Opera */
+}
+
+.sidelayout {
+  padding-top: 30px;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation li {
+  list-style-type: none;
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+.textbox1 {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  margin: 20px;
+  border: 2px dashed darkgreen;
+  border-radius: 12px;
+}
+
+.textbox2 {
+  padding: 20px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+
+p,
+.comingsoon {
+  font-size: 14px;
+}
+
+.comingsoon {
+  font-style: italic;
+}
+
+img[src*="hitcounter"] {
+  margin: 40px auto 20px auto;
+}
+
+img[src*="alienlogo"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img[src*="blood"] {
+  padding-top: 13px;
+  padding-bottom: 50px;
+}
+
+img[src*="redbubble"] {
+  --redbubble-height: 40px;
+  height: var(--redbubble-height);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1650px) {
+  img[src*="redbubble"] {
+    --redbubble-height: 30px;
+  }
+}
+
+@media (max-width: 1300px) {
+  img[src*="redbubble"] {
+    --redbubble-height: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  img[src*="redbubble"] {
+    --redbubble-height: 10px;
+  }
+}
+
+img[src*="construction"] {
+  width: minmax(50px, 300px);
+  margin-top: 10px;
+}
+
+a:link {
+  color: #f50000;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:visited {
+  color: #c50000;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  color: #f50000;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+a:active {
+  color: #c50000;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.navigation a:link {
+  color: gold;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navigation a:visited {
+  color: gold;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navigation a:hover {
+  color: gold;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.navigation a:active {
+  color: gold;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border: 3px inset grey;
+  border-radius: 50%;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* not working? */
+  justify-content: center;
+  background-color: grey;
+  opacity: 0.5;
+  margin: 35px 20px;
+}
+
+#sidebox1 {
+  background-color: black;
+  width: 20%;
+  height: 50%;
+  /*  order: 2; */
+  flex-shrink: 1; /* not working? */
+}
+#sidebox2 {
+  background-color: white;
+  color: black;
+  width: 20%;
+  height: 50%;
+  /*  order: 1; */
+  flex-shrink: 2; /* not working? */
+}
+#sidebox3 {
+  background-color: black;
+  width: 20%;
+  height: 50%;
+  align-self: flex-end;
+  flex-shrink: 1; /* not working? */
+}
+#sidebox4 {
+  background-color: white;
+  color: black;
+  width: 20%;
+  height: 50%;
+
+  flex-shrink: 2; /* not working? */
+}

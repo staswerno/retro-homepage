@@ -72,11 +72,9 @@ body {
 }
 
 .textbox1 {
-  background: rgba(0, 0, 0, 0.5);
   padding: 40px;
   margin: 20px;
-  border: 2px dashed darkgreen;
-  border-radius: 12px;
+
 }
 
 .textbox2 {

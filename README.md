@@ -1,4 +1,3 @@
-# wbs-primer-site
-Created with CodeSandbox
-Testing Branching
-Testing push/pull
+# retro homepage
+
+a loving recreation of my first website from around '98

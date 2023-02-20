@@ -22,6 +22,7 @@ body {
     "sidebar meat";
 }
 
+/*
 @media (max-width: 750px) {
   .layout {
     grid-template-columns: 1fr;
@@ -33,6 +34,7 @@ body {
       "meat";
   }
 }
+*/
 
 .header {
   grid-area: header;

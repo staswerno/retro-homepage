@@ -1,5 +1,5 @@
 # retro homepage
 
-a loving recreation of my first website from around '98
+a loving recreation of my first website from '98
 
 check it here: https://staswerno.github.io/retro-homepage/
